@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 Dylan's Homework</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Dylan Sayer</title>
+    <meta name="description" content="My name is Dylan Sayer, and im making this Web page for my colege class - WDD 131 Dynamic Web Fundamentals. this is an about me page that gives you my linkedin, favorit Scripture, and a small bio.">
+    <meta name="author" content="Dylan Sayer.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
-    <h1>WDD 131 Dylan's Homework</h1>
+    <div class="parent">
+        <header class="header">
+            <h1>WDD 131: Dynamic Web Fundamentals - Dylan T. Sayer</h1>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="https://www.linkedin.com/in/dylan-sayer-336aa22ba/">Linkedin</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/isa/61?lang=eng&id=p3#p3">Scripture</a></li>
+                    <li><a href="#final-project">Final Project</a></li>                
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="card card1">
+                <div class="card-discript">About Me</div>
+                <p id="intro">My name is Dylan, I love to play the piano and compose music. I served a full mission as a service missionary in Salt Lake City, Utah. Im starting to get my education at BYU Pathways for Software enginering</p>
+                <div class="wrapper"><img id="profile" src="images/profile-picture.webp" alt="Dylan Sayer" width="175"></div>
+                <h2>Utah</h2>
+                <div class="wrapper"><img id="utah-flag" src="images/utah-flag.webp" alt="Utah State Flag"></div>
+                <p id="history">Utah is a state in the western United States, known for its stunning natural landscapes, outdoor recreation, and vibrant cultural heritage. It is bordered by Idaho to the north, Wyoming to the northeast, Colorado to the east, Arizona to the south, and Nevada to the west.</p>
+                   
+            </section>
+            <section class="card card2">
+                <h2 class="card-discript">Web Dev Resources</h2>
+                <ul class="dotted-nav">
+                    <li><a href="https://developer.mozilla.org/en-US/">• MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com">• W3Schools</a></li>
+                    <li><a href="https://css-tricks.com">• CSS-Tricks</a></li>
+                    <li><a href="https://www.freecodecamp.org">• Free Code Camp</a></li>
+                    <li><a href="https://caniuse.com">• Can I Use</a></li>
+                </ul>
+            </section>
+        </main>
+        
+        <footer class="footer">Footer
+            
+            <p>&copy; <span id="year"></span> 🐦‍🔥Dylan Ty Sayer🐦‍🔥 🐝Utah🐝</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script>
+            
+        </script>
+    </div>
 </body>
 </html>
