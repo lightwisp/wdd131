@@ -47,8 +47,8 @@ main{
     background-color:#b3bfb8;
     color: #f0f7f4;
     grid-column: 1/4;
-    max-width: 95%;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 50px;
     border-left: 3px solid #3C493f;
     border-right: 3px solid #3C493f;
 }
