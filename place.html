@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Places</title>
+    <meta name="description" content="using JS to dynamicaly update a web page">
+    <meta name="author" content="Dylan Sayer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-moble.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <div class="body-parent">
+        <header>
+            <h1 id="location-name">Iceland</h1>
+        </header>
+        <main>
+            <div class="main-parent">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/iceland-large.webp">
+                    <img class="small-img" src="images/iceland-small.webp" alt="Iceland puffin's">
+                </picture>
+                <div class="info-box data">
+                    <div class="banner"><h2>Data</h2></div>
+                    <ul class="info-list">
+                        <h3>Area:</h3><label>103,000 km²</label>
+                        <h3>Population:</h3><label>~380,000</label>
+                        <h3>Capital:</h3><label>Reykjavík</label>
+                        <h3>Languages:</h3><label>Icelandic</label>
+                        <h3>Currency:</h3><label>Icelandic króna (ISK)</label>
+                        <h3>Time Zone:</h3><label>GMT (UTC+0)</label>
+                    </ul>
+                </div>
+                <div class="info-box weather">
+                    <div class="banner"><h2>Weather</h2><img src="images/cloud-sun-fill.svg" alt="weather" width="60px"></div>
+                    <ul class="info-list">
+                        <h3>Temperature:</h3><label>place holder</label>
+                        <h3>Conditions:</h3><label>place holder</label>
+                        <h3>Wind:</h3><label>place holder</label>
+                        <h3>Wind Chill:</h3><label>place holder</lable>
+                    </ul>    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="year"></span> 🐦‍🔥Dylan Ty Sayer🐦‍🔥 🐝Utah🐝</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>
