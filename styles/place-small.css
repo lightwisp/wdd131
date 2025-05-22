@@ -39,6 +39,15 @@
         border-radius: .5rem;
         border: none;
     }
+    .h2-data::after{
+        width: 60px;
+        height: 60px;
+    }
+
+    .h2-weather::after{
+        width: 70px;
+        height: 70px;;
+    }
 
     .info-list label{
     padding-top: 6px;

@@ -5,16 +5,16 @@
     color: #708B75;
     color: #9AB87A;
     color: #F8F991;
+    font-family: 'Titillium Web';
+    font-weight: 500;
+    font-style: normal;
+    font-size:18px;
 }
 
 .body-parent{
     color: black;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    font-family: 'Titillium Web';
-    font-weight: 500;
-    font-style: normal;
-    font-size:18px;
 }
 header{
     grid-column: 1/4;
@@ -77,8 +77,26 @@ main{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.banner img{
-    width: 60px;
+.h2-data::after{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    background-image: url('/wdd131/images/clipboard-data.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+}
+
+.h2-weather::after{
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('/wdd131/images/cloud-sun-fill.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
 }
 
 .info-list{
