@@ -14,17 +14,17 @@
     font-family: 'Titillium Web';
     font-weight: 500;
     font-style: normal;
-    font-size:30px;
+    font-size:18px;
 }
 header{
     grid-column: 1/4;
     text-align: center;
     background-color: #444B6E;
     color: white;
-    font-size: 50px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
-    border-bottom: 35px solid #3D315B;
+    border-bottom: 20px solid #3D315B;
 }
 
 main{
@@ -37,7 +37,6 @@ main{
 .main-parent{
     grid-column: 1/4;
     position: relative; 
-    background-color: #3D315B;
     margin: 0;
     padding: 0;  
 }
@@ -45,16 +44,17 @@ main{
 .small-img{
     width: 100%;
     height: auto;
+    border-top: 10px solid #708B75;
+    border-bottom: 10px solid #708B75;
 }
 
 .info-box{
-    padding: 0;
-    margin: 0;
-    max-width: 600px; 
-    background-color: #ffffff90;
+    border:3px solid #3D315B90;
     border-radius: .5rem;
+    margin-bottom: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
 }
+
 
 .data{
     top: 50px;
@@ -68,16 +68,13 @@ main{
 
 .banner{
     display: grid;
-    position: relative;
-    top: -20px;
-    left: -20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
+    align-content: center;
+    text-align: center;
     margin: 0;
     padding-left: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    background-color: #9AB87A;
-    border-radius: .5rem;
+    border-bottom: 3px solid #708B7590;
 }
 
 .info-list{
@@ -92,7 +89,7 @@ main{
 }
 .info-list label{
     text-align: left;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 
 footer{
