@@ -10,7 +10,7 @@
 .body-parent{
     color: black;
     display: grid;
-    grid-template-columns: 1fr auto 1fr / 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
     font-family: 'Titillium Web';
     font-weight: 500;
     font-style: normal;
@@ -75,6 +75,10 @@ main{
     padding-left: 20px;
     border-bottom: 3px solid #708B7590;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.banner img{
+    width: 60px;
 }
 
 .info-list{
