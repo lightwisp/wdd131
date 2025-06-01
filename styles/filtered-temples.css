@@ -20,7 +20,7 @@
 
 header{
     background-color: #7e8d85;
-    color: #f0f7f4;
+    color: white;
     grid-column: 1/4;
     border: 3px solid #3C493f;
     border-radius: .5rem;
@@ -68,6 +68,7 @@ h2{
     text-align: center;
     margin-bottom: .1rem;
     text-decoration: underline #3C493f 3px;
+    color: #3C493f;
 }
 .main-nav{
     justify-content: right;
@@ -85,8 +86,7 @@ h2{
 }
 
 .navigation a{
-    
-    color: #f0f7f4;
+    color: white;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -101,12 +101,13 @@ h2{
 
 .container{
     display:grid; 
-    grid-template-columns: repeat(auto-fill,minmax(450px,1fr)); 
+    grid-template-columns: repeat(3 ,1fr); 
     grid-gap: 10px;
     width: 95%;
     max-width: 95%;
     place-items: center;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .container figure{
@@ -127,20 +128,27 @@ h2{
 }
 
 .temple-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     line-height: 40px;
     font-size: 100%;
-    border: 3px solid #f0f7f4;
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid black;
     margin: 1rem;
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-    
-    max-height: 100%;
+    background-color: #3C493f;
 }
-
+.temple-card h3,p {
+        margin-top: 0;
+    }
 footer{
     text-align: center;
     margin: 0;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+    background-color: #3C493f;
 }
