@@ -71,6 +71,7 @@ h2{
 }
 .main-nav{
     justify-content: right;
+    font-size: larger;
 }
 .navigation{
     background-color: #7e8d85;
@@ -100,7 +101,7 @@ h2{
 
 .container{
     display:grid; 
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); 
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr)); 
     grid-gap: 10px;
     width: 95%;
     max-width: 95%;
@@ -123,6 +124,18 @@ h2{
     margin: 0;
     border: 3px solid #a2e3c4;
     border-radius: .5rem;
+}
+
+.temple-card{
+    line-height: 40px;
+    font-size: 100%;
+    border: 3px solid #f0f7f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    
+    max-height: 100%;
 }
 
 footer{

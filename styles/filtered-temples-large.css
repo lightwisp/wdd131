@@ -4,9 +4,13 @@
     header{
         display: block;
     }
+    header h1{
+        font-size: larger;
+    }
     .main-nav{
         display: none;
         background-color: black;
+
     }
     .main-nav.show{
         display: block;
