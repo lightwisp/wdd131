@@ -118,7 +118,7 @@ homeLink.addEventListener("click", () =>{
 oldLink.addEventListener("click", () => {
     const oldTemples = temples.filter(temple => {
         let templeYear = parseInt(temple.dedicated.split(",")[0]);
-        return templeYear <=1999;   
+        return templeYear <=1900;   
     })
     createTempleCard(oldTemples)   
 });
@@ -134,7 +134,7 @@ newLink.addEventListener("click", () => {
 largeLink.addEventListener("click", () => {
     const bigTemples = temples.filter(temple => {
         let templeArea = temple.area;
-        return templeArea >= 25000;
+        return templeArea >= 90000;
     })
     createTempleCard(bigTemples)
 });
@@ -142,7 +142,7 @@ largeLink.addEventListener("click", () => {
 smallLink.addEventListener("click", () => {
     const smallTemples = temples.filter(temple => {
         let templeArea = temple.area;
-        return templeArea <= 25000;
+        return templeArea <= 10000;
     })
     createTempleCard(smallTemples)
 });
