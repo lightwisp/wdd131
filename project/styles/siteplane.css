@@ -1,0 +1,18 @@
+
+:root{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+    --dark-blue: #390099;
+    --murrey: #9E0059;
+    --folly: #FF0054;
+    --orange: #FF5400;
+    --amber: #FFBD00;
+}
+
+
+.delius-regular {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
