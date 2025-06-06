@@ -1,0 +1,94 @@
+
+@media screen and (max-width: 1100px) {
+    :root{
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        --dark-blue: #390099;
+        --murrey: #9E0059;
+        --folly: #FF0054;
+        --orange: #FF5400;
+        --amber: #FFBD00;
+    }
+
+    h3{ order: 1;}
+    .recipie img{ order: 2;}
+    .ingTital {order: 3;}
+    .listUl {order: 4;}
+    .diretTital {order: 5;}
+    .directionUl {order: 6;}
+    .mobilButton {order: 7;}
+
+    .nav-box{
+        animation: fallUp 0.3s ease; 
+    }
+    .toggled{
+        display: flex;
+        animation: fall 0.3s ease;
+    }
+    .animated{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .recipie{display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .ingTital, .listUl,.diretTital, .directionUl{
+        display: none;
+    }
+    .expanded{
+        display: block;
+    }
+    .expandedTable{
+        display: grid;
+    }
+
+    .mobilButton{
+        display: block;
+        margin: 0;
+        width: 50%;
+        height: 50px;
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px;
+        position: relative;
+        bottom: -15px;
+        border-color: var(--amber);
+        background-color: var(--amber);
+        border-radius: .5rem;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(-100px); opacity: 0;}
+        10% { transform: translateY(-90px); opacity: .1;}
+        20% { transform: translateY(-80px); opacity: .2;}
+        30% { transform: translateY(-70px); opacity: .3;}
+        40% { transform: translateY(-60px); opacity: .4;}
+        50% { transform: translateY(-50px); opacity: .5;}
+        60% { transform: translateY(-40px); opacity: .6;}
+        70% { transform: translateY(-30px); opacity: .7;}
+        80% { transform: translateY(-20px); opacity: .8;}
+        90% { transform: translateY(-10px); opacity: .9;}
+        100% { transform: translateY(0px); opacity: 1;}   
+    }
+
+    @keyframes fallUp {
+        0% { transform: translateY(0px); opacity: 1; }
+        10%  { transform: translateY(-10px); opacity: 0.9; }
+        20%  { transform: translateY(-20px); opacity: 0.8; }
+        30%  { transform: translateY(-30px); opacity: 0.7; }
+        40%  { transform: translateY(-40px); opacity: 0.6; }
+        50%  { transform: translateY(-50px); opacity: 0.5; }
+        60%  { transform: translateY(-60px); opacity: 0.4; }
+        70%  { transform: translateY(-70px); opacity: 0.3; }
+        80%  { transform: translateY(-80px); opacity: 0.2; }
+        90%  { transform: translateY(-90px); opacity: 0.1; }
+        100% { transform: translateY(-100px); opacity: 0; }
+    }
+}
