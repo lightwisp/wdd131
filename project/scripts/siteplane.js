@@ -26,7 +26,7 @@ const recipies = [
         type: "lunch dinner"
     },
     {
-        
+
     }
 ]
 
@@ -52,7 +52,7 @@ function createRecipies(filteredRecipie)
         name.textContent = recipie.foodName;
 
         let ingredientSection = document.createElement("h4")
-        ingredientSection.textContent = "Ingredients";
+        ingredientSection.textContent = "Ingredients:";
 
         let ingredients = document.createElement("ul");
         ingredients.classList.add("listUl")
@@ -68,7 +68,7 @@ function createRecipies(filteredRecipie)
         img.loading = "lazy"
 
         let diretionsSection = document.createElement("h4")
-        diretionsSection.textContent = "Directions";
+        diretionsSection.textContent = "Directions:";
         
         let diretions = document.createElement("ul");
         diretions.classList.add("directionUl")
