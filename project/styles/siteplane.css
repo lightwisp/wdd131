@@ -15,4 +15,182 @@
   font-family: "Delius", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 30px;
+}
+
+.parent{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr / 1fr auto 1fr;
+  color: black;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  color: white;
+  grid-column: 1/4;
+}
+.head-box{
+  background-color: var(--dark-blue);
+  border: 4px solid var(--folly);
+  border-radius: .5rem;
+  margin-top: 0;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-around;
+}
+
+.hamburger{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    padding: .5rem;
+    display: none;
+}
+
+.icon{
+  width: 32px;
+  height: 32px;
+}
+.icon:hover{
+  border-radius: .5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr / 1fr auto 1fr;
+  grid-column: 1/4;
+  max-width: 95%;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.site-purpose{
+  text-align: center;
+  grid-column: 1/4;
+  margin: 0;
+  padding: 0;
+}
+h2{
+  text-decoration: underline var(--orange);
+  margin: 0;
+}
+
+footer{
+  grid-column: 1/4;
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+}
+
+.main-nav{
+    justify-content: left;
+    font-size: larger;
+}
+.navigation{
+    background-color: var(--folly);
+    border-radius: .5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px
+    
+}
+
+.navigation a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    margin: 0;
+}
+
+.navigation a:hover{
+    color: var(--amber);
+    text-decoration: underline;
+}
+
+.recipie-container{
+  border: 4px solid var(--murrey);
+  grid-column: 1/4;
+  border: 4px solid var(--murrey);
+}
+.recipie{
+  padding: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr / 1fr auto 1fr;
+  max-width: fit-content;
+  height: auto;
+}
+
+h3{
+  margin-bottom: 5px;
+  grid-column: 1/4;
+}
+h4{
+  margin-top: 7px;
+  margin-bottom: 4px;
+  grid-column: 1/4;
+}
+
+.listUl{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/3;
+  padding: 0;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  list-style: none;
+  max-width: fit-content;
+  padding: 0;
+  margin: 0;
+}
+.listUl li{
+  border-bottom: 2px dotted black;
+}
+
+.directionUl{
+  grid-column: 1/4;
+  padding: 0;
+}
+.directionUl li{
+  padding-bottom: 5px;
+}
+.recipie img{
+  width: 300px;
+  height: auto;
+  grid-column: 3/4;
+  margin: 0 auto;
+}
+
+.fav-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+}
+.button-img{
+  position: absolute;
+  right: -2px;
+  top: -1px;
+  max-width: 30px;
+  max-height: 30px;
+  
 }
