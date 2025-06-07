@@ -64,6 +64,7 @@ function createRecipies(filteredRecipie)
 
         let favButton = document.createElement("button")
         favButton.classList.add("fav-button")
+        favButton.setAttribute("aria-label", "Favoret Button")
 
         
         let name = document.createElement("h3")
