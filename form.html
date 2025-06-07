@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foum Design</title>
+    <meta name="description" content="Creating a Foum for practice">
+    <meta name="authour" content="Dylan Sayer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="parent">
+            <form action="review.html" method="get">
+                <div class="productName">
+                    <label id="biglable" for="product">Product Name</label>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Choose a product...</option>
+                        <option value="Play Station 5">Play Station 5</option>
+                        <option value="XBox 1">XBox 1</option>
+                        <option value="Nintendo Switch">Nintendo Switch</option>
+                        <option value="PC Gaming">PC Gaming</option>
+                    </select>
+                </div>
+                <div class="rating">
+                    <p id="biglable">Overall Rating</p>
+                    <div class="radio-group">
+                        <div class="radio-pair">
+                            <label for="rate1">★</label>
+                            <input type="radio" name="rating" id="rate1" value="1" required>
+                        </div>
+
+                        <div class="radio-pair">
+                            <label for="rate2">★★</label>
+                            <input type="radio" name="rating" id="rate2" value="2" required>
+                        </div>
+
+                        <div class="radio-pair">
+                            <label for="rate3">★★★</label>
+                            <input type="radio" name="rating" id="rate3" value="3" required>
+                        </div>
+
+                        <div class="radio-pair">
+                            <label for="rate4">★★★★</label>
+                            <input type="radio" name="rating" id="rate4" value="4" required>
+                        </div>
+
+                        <div class="radio-pair">
+                            <label for="rate5">★★★★★</label>
+                            <input type="radio" name="rating" id="rate5" value="5" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="day-picker">
+                    <label id="biglable" for="calander">Date of Installation</label>
+                    <input type="date" name="calander" id="calander" required>
+                </div>
+                <div class="featrue">
+                    <label id="biglable">Which features did you find usefull in the product?</label>
+                    <p id="smalltext">(Check all that apply)</p>
+                    <div class="checkbox-group">
+                        <div class="checkbox-pair">
+                            <input type="checkbox" name="box" id="box1" value="Durability">
+                            <label for="box1">Durability</label>
+                        </div>
+
+                        <div class="checkbox-pair">
+                            <input type="checkbox" name="box" id="box2" value="Ease of Use">
+                            <label for="box2">Ease of Use</label>
+                        </div>
+
+                        <div class="checkbox-pair">
+                            <input type="checkbox" name="box" id="box3" value="Performance">
+                            <label for="box3">Performance</label>
+                        </div>
+
+                        <div class="checkbox-pair">
+                            <input type="checkbox" name="box" id="box4" value="Design">
+                            <label for="box4">Design</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="review-box">
+                    <label id="biglable" for="review">Written Review </label>
+                    <p id="smalltext">(Optional)</p>
+                    <textarea name="review" id="review"></textarea>
+                </div>
+                <div class="user-name">
+                    <label id="biglable" for="user">Your Name </label>
+                    <p id="smalltext">(Optional)</p>
+                    <input type="text" name="user" id="user">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Post Review">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🐦‍🔥Dylan Ty Sayer🐦‍🔥 🐝Utah🐝</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

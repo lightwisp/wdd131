@@ -1,0 +1,12 @@
+@media screen and (min-width: 1000px) {
+    .parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    }
+    #biglable{
+    font-size: 30px;
+    }
+}
