@@ -42,13 +42,15 @@ products.forEach(product => {
     select.appendChild(option);
 });
 
+let count = parseInt(localStorage.getItem("count")) || 0;
+
 if (!localStorage.getItem("count")){
     localStorage.setItem("count", JSON.stringify(count));
 }
 
 const form = document.querySelector("form");
 form.addEventListener("submit", () => {
-    let count = parseInt(localStorage.getItem("count")) || 0;
+    
     count++;
     localStorage.setItem("count", count);
 });
