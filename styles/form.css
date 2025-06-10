@@ -58,7 +58,7 @@ footer{
     display: grid;
     margin: 20px 0px 20px 0px;
 }
-#calander{
+#calender{
     max-width: 400px;
     border-radius: .5rem;
     border-color: white;
@@ -97,13 +97,13 @@ footer{
     font-size: 25px;
     font-family: var(--family);
 }
-#smalltext{
+.smalltext{
     font-size: 15px;
     font-style: italic;
     color: blue;
     margin: 0 0 10px 0;
 }
-#biglable{
+.biglable{
     font-weight: 500;
     margin: 0;
 }
@@ -114,4 +114,8 @@ footer{
     font-family: var(--family);
     font-size: 20px;
     font-weight: 500;
+}
+
+.reviews-submitted p{
+    font-size: 50px;
 }
