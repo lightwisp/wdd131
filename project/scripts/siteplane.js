@@ -54,6 +54,8 @@ const recipies = [
     }
 ]
 
+// creation of all the recipies from my list of recipies
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function createRecipies(filteredRecipie)
 {
     recipieContainer.innerHTML = "";
@@ -99,26 +101,43 @@ function createRecipies(filteredRecipie)
             directions.appendChild(li);
         });
         
-        
+        // favoret button creation
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         fetch("images/bookmark-heart.svg")
         .then(response => response.text())
         .then(data => {
             let div = document.createElement("div");
             div.innerHTML = data;
             let svg = div.querySelector("svg");
-            
+            if(localStorage.getItem(recipie.foodName) === "true"){
+                svg.setAttribute("fill", "red");
+            }
             favButton.addEventListener('click', () =>{
-                svg.classList.toggle("on")
-                if (svg.getAttribute("fill") === "red"){
+                svg.classList.toggle("on");
+                const isFave = svg.getAttribute("fill") === "red";
+                let types = recipie.type.split(" ");
+    
+                if (isFave){
                     svg.setAttribute("fill", "black");
+                    types = types.filter(t => t !== "favorite");
+
+                    localStorage.setItem(recipie.foodName, "false");
                 }
                 else{
                     svg.setAttribute("fill", "red");
+                    if (!types.includes("favorite")){
+                        types.push("favorite");
+                    }
+                    localStorage.setItem(recipie.foodName, "true");
                 }
+                recipie.type = types.join(" ")
             });
             favButton.appendChild(svg); // or wherever you want it
         });
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+        //mobile button for expanding and colapsing
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         let mobilButton = document.createElement("button")
         mobilButton.classList.add("mobilButton");
         mobilButton.textContent = "Expand";
@@ -135,6 +154,7 @@ function createRecipies(filteredRecipie)
             }
             
         })
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         
         card.appendChild(name);
         card.appendChild(ingredientSection);
@@ -148,5 +168,60 @@ function createRecipies(filteredRecipie)
         recipieContainer.appendChild(card);
     }); 
 }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+//set up of navagation functionalitys
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+const homeLink = document.querySelector("#home");
+const breakfast = document.querySelector("#breakfast");
+const lunch = document.querySelector("#lunch");
+const dinner = document.querySelector("#dinner")
+const dessert = document.querySelector("#dessert")
+const favorite = document.querySelector("#favorites")
 
 createRecipies(recipies);
+
+homeLink.addEventListener("click", () =>{
+    createRecipies(recipies)
+})
+
+breakfast.addEventListener("click", () => {
+    const breakfastMeal = recipies.filter(recipie => {
+        let mealType = recipie.type.toLowerCase().includes("breakfast")
+        return mealType;
+    })
+    createRecipies(breakfastMeal)
+});
+
+lunch.addEventListener("click", () => {
+    const lunchMeal = recipies.filter(recipie => {
+        let mealType = recipie.type.toLowerCase().includes("lunch")
+        return mealType;
+    })
+    createRecipies(lunchMeal)
+});
+
+dinner.addEventListener("click", () => {
+    const dinnerMeal = recipies.filter(recipie => {
+        let mealType = recipie.type.toLowerCase().includes("dinner")
+        return mealType;
+    })
+    createRecipies(dinnerMeal)
+});
+
+dessert.addEventListener("click", () => {
+    const dessertMeal = recipies.filter(recipie => {
+        let mealType = recipie.type.toLowerCase().includes("dessert")
+        return mealType;
+    })
+    createRecipies(dessertMeal)
+});
+
+favorites.addEventListener("click", () => {
+    const favoriteMeals = recipies.filter(r => r.type.includes("favorite"));
+    createRecipies(favoriteMeals)
+});
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
