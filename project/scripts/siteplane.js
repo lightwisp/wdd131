@@ -111,6 +111,7 @@ function createRecipies(filteredRecipie)
             let svg = div.querySelector("svg");
             if(localStorage.getItem(recipie.foodName) === "true"){
                 svg.setAttribute("fill", "red");
+                svg.classList.toggle("on");
             }
             favButton.addEventListener('click', () =>{
                 svg.classList.toggle("on");
@@ -155,7 +156,7 @@ function createRecipies(filteredRecipie)
             
         })
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        
+
         card.appendChild(name);
         card.appendChild(ingredientSection);
         card.appendChild(ingredients);
