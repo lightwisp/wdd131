@@ -106,7 +106,7 @@ const recipies = [
             "Fold in egg whites.",
             "Cook in waffle iron and enjoy."
         ],
-        image: "images/",
+        image: "images/waffles.webp",
         type: "breakfast"
     },
     {
@@ -128,7 +128,7 @@ const recipies = [
             "Put cooked pasta in sauce, combine. Add pasta water if sauce needs to be thinned out.",
             "Serve warm."
         ],
-        image: "images/",
+        image: "images/creamy-pesto-pasta.webp",
         type: "lunch dinner"
     },
     {
@@ -151,7 +151,7 @@ const recipies = [
             "Dip chicken pieces into batter, allowing excess to drip off.",
             "Fry chicken in hot oil in a single layer, turning once, until golden brown and cooked through."
         ],
-        image: "images/",
+        image: "images/golden-nuggets.webp",
         type: "lunch"
     },
     {
@@ -183,7 +183,7 @@ const recipies = [
             "Add the sundried tomatoes and return the chicken to the pan. Let the sauce simmer and thicken for a few more minutes.",
             "Garnish with chopped fresh basil leaves and serve warm over pasta, rice, or potatoes."
         ],
-        image: "images/",
+        image: "images/marry-me-chicken.webp",
         type: "dinner"
     },
     {
@@ -208,7 +208,7 @@ const recipies = [
             "Sprinkle toasted cornflakes over the top of the casserole.",
             "Bake for 40–45 minutes or until hot and bubbly. Serve hot."
         ],
-        image: "images/",
+        image: "images/funeral-potatoes.webp",
         type: "lunch"
     },
     {
@@ -239,7 +239,7 @@ const recipies = [
             "Top with sour cream, sliced olives, chopped green onions, chopped tomato, and remaining cheese.",
             "Bake uncovered for 5 minutes, then let stand for 10–15 minutes before serving."
         ],
-        image: "images/",
+        image: "images/mexican-lasagna.webp",
         type: "dinner"
     },
     {
@@ -269,7 +269,7 @@ const recipies = [
             "Bake one sheet at a time for 10–12 minutes, until cookie edges are set and just beginning to brown. Centers will still look soft and puffy.",
             "Let cookies cool on baking sheet for 10 minutes, then transfer to a wire rack to cool completely."
         ],
-        image: "images/",
+        image: "images/snickerdoodles.webp",
         type: "dessert"
     },
     {
@@ -296,7 +296,7 @@ const recipies = [
             "Roll a heaping teaspoon of dough into a ball and roll in powdered sugar.",
             "Bake at 350°F for 9–11 minutes."
         ],
-        image: "images/",
+        image: "images/lemmon-sugar-cookie.webp",
         type: "dessert"
     },
     {
@@ -313,7 +313,7 @@ const recipies = [
             "Bake at 350°F for 8 minutes.",
             "Place in the refrigerator to help set the pie before serving."
         ],
-        image: "images/",
+        image: "images/key-lime-pie.webp",
         type: "dessert"
     },
     {
@@ -333,7 +333,7 @@ const recipies = [
             "Pour mixture over popped popcorn and stir to coat.",
             "Make sure to shape them while warm if forming into clusters or balls."
         ],
-        image: "images/",
+        image: "images/carmel-corn.webp",
         type: "dessert"
     },
     {
@@ -355,7 +355,7 @@ const recipies = [
             "Add noodles and simmer until they are tender.",
             "Thicken with cornstarch if desired, and season with salt and pepper to taste."
         ],
-        image: "images/",
+        image: "images/chicken_noodle_soup.webp",
         type: "lunch dinner"
     },
     {
@@ -383,7 +383,7 @@ const recipies = [
             "Add all ingredients to a 6-quart pot.",
             "Cover the pot and simmer for 2 hours, stirring every 15 minutes."
         ],
-        image: "images/",
+        image: "images/chili.webp",
         type: "dinner"
     },
     {
@@ -407,7 +407,7 @@ const recipies = [
             "While pasta is cooking, add chicken broth, basil, and parmesan to the skillet. Stir to combine. Return chicken to skillet and reduce heat. Simmer for 4 minutes.",
             "Drain pasta. Place in a large serving bowl and top with chicken and vegetable mixture. Serve immediately."
         ],
-        image: "images/",
+        image: "images/kyles-angel-hair-pasta.webp",
         type: "dinner"
     },
     {
@@ -436,7 +436,7 @@ const recipies = [
             "Top with remaining cheese and sprinkle with scallions.",
             "Broil until cheese is melted, spotty brown, and bubbly."
         ],
-        image: "images/",
+        image: "images/spicy-sausage-pasta.webp",
         type: "dinner"
     },
     {
@@ -455,7 +455,7 @@ const recipies = [
             "Pour batter into the hot buttered pan immediately.",
             "Bake on the lowest oven shelf for 30 minutes."
         ],
-        image: "images/",
+        image: "images/german-pancakes.webp",
         type: "breakfast"
     },
     {
@@ -480,7 +480,7 @@ const recipies = [
             "Make a paste of flour and 1/3 cup water. Add paste to potato mixture. Add milk and cook until slightly thickened, stirring constantly.",
             "Stir in corn and ham. Heat thoroughly and serve."
         ],
-        image: "images/",
+        image: "images/potato-ham-chowder.webp",
         type: "lunch"
     },
     {
@@ -503,7 +503,7 @@ const recipies = [
             "Take other 2 pie shells and remove from pans to use as top crusts. Seal edges and cut 6–8 slits in top.",
             "Bake on bottom rack at 400°F for 1 hour, until crust is golden brown."
         ],
-        image: "images/",
+        image: "images/chicken-pie.webp",
         type: "lunch dinner"
     },
     {
@@ -529,7 +529,7 @@ const recipies = [
             "Pour sauce over chicken.",
             "Bake at 325°F for 1 hour. Serve with rice."
         ],
-        image: "images/",
+        image: "images/sweet-sour-chicken.webp",
         type: "lunch dinner"
     },
     {
@@ -548,7 +548,7 @@ const recipies = [
             "Serve with soy sauce or as desired. Cold rice absorbs less oil when cooking.",
             "Note: Partially cooked vegetables are best. Anything can go into it. This is a great way to use leftovers and clean out the refrigerator!"
         ],
-        image: "images/",
+        image: "images/fried-rice.webp",
         type: "lunch dinner"
     },
     {
@@ -569,7 +569,7 @@ const recipies = [
             "Serve with syrup, strawberries, whipped cream, or powdered sugar.",
             "Enjoy your homemade pancakes!"
         ],
-        image: "images/",
+        image: "images/pancakes.webp",
         type: "breakfast"
     }
 
