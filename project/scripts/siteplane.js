@@ -25,6 +25,8 @@ nav.addEventListener("animationend", (e) =>{
 document.getElementById("year").innerHTML = year
 document.getElementById("lastModified").innerHTML = lastModified
 
+// all of my recipies
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const recipieContainer = document.querySelector(".recipie-container");
 const recipies = [
     {
@@ -51,8 +53,87 @@ const recipies = [
             "Drop onto parchment linded cookie sheet and wait to cool"],
         image: "images/no-bake.webp",
         type: "dessert"
-    }
+    },
+    {
+        foodName: "Hot Rolls",
+        ingredients: [
+            "2 tbsp", "(1 pkg) yeast",
+            "2 tbsp", "Sugar",
+            "1/2 cup", "Powdered Milk",
+            "2 cups", "Warm Water",
+            "2", "Eggs",
+            "1/2 cup", "Cooking Oil",
+            "1/2 cup", "Sugar",
+            "1 1/2 tsp", "Salt",
+            "~6 cups", "Flour",
+            "", "Butter"
+        ],
+        directions: [
+            "Dissolve 2 tbsp sugar in 1/2 cup warm water, add yeast. When dissolved, add to other mixture.",
+            "Add flour until dough is smooth and not sticky. Let raise until double, then they can be rolled into any shape desired.",
+            "Place a piece of butter and fold dough over so it's in the middle. Let rise again.",
+            "Bake at 350° for about 15–20 min."
+        ],
+        image: "images/hot-rolls.webp",
+        type: "dessert"
+    },
+    {
+        foodName: "Peanut Butter Blossoms",
+        ingredients: ["1 cup", "Sugar", "1 cup", "Brown Sugar", "1 cup", "Butter", "1 cup", "Creamy Peanut Butter",
+            "2", "Egges","1/4 cup", "Milk", "2 tsp", "Vanilla", "3 1/2 cups", "Flower", "2 tsp", "Baking soda", "1 tsp", "Salt", "2 10oz pkg", "Candy Kisses"
+        ],
+        directions: ["Cream togeather sugars, butter and peanutbutter.",
+             "Beat in eggs, milk, vanilla. Sift together flour, soda, and salt. Stir together in the cream bowl.",
+            "Shape into balls and roll in granulated sugar.", "Bake 350° for 8 - 10 min",
+             "Immediately press a chocolate kiss int each."],
+        image: "images/peanut-blossoms.webp",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
+    {
+        foodName: "",
+        ingredients: [],
+        directions: [],
+        image: "",
+        type: ""
+    },
 ]
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 // creation of all the recipies from my list of recipies
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,14 +190,17 @@ function createRecipies(filteredRecipie)
             let div = document.createElement("div");
             div.innerHTML = data;
             let svg = div.querySelector("svg");
+            let types = recipie.type.split(" ");
             if(localStorage.getItem(recipie.foodName) === "true"){
                 svg.setAttribute("fill", "red");
                 svg.classList.toggle("on");
+                types.push("favorite");
+                recipie.type = types.join(" ")
             }
+
             favButton.addEventListener('click', () =>{
                 svg.classList.toggle("on");
                 const isFave = svg.getAttribute("fill") === "red";
-                let types = recipie.type.split(" ");
     
                 if (isFave){
                     svg.setAttribute("fill", "black");
@@ -178,14 +262,16 @@ function createRecipies(filteredRecipie)
 const homeLink = document.querySelector("#home");
 const breakfast = document.querySelector("#breakfast");
 const lunch = document.querySelector("#lunch");
-const dinner = document.querySelector("#dinner")
-const dessert = document.querySelector("#dessert")
-const favorite = document.querySelector("#favorites")
+const dinner = document.querySelector("#dinner");
+const dessert = document.querySelector("#dessert");
+const favorite = document.querySelector("#favorites");
+const pageTital = document.querySelector("#pageName");
 
 createRecipies(recipies);
 
 homeLink.addEventListener("click", () =>{
     createRecipies(recipies)
+    pageTital.textContent = "Home"
 })
 
 breakfast.addEventListener("click", () => {
@@ -194,7 +280,9 @@ breakfast.addEventListener("click", () => {
         return mealType;
     })
     createRecipies(breakfastMeal)
+    pageTital.textContent = "Breakfasts"
 });
+
 
 lunch.addEventListener("click", () => {
     const lunchMeal = recipies.filter(recipie => {
@@ -202,6 +290,7 @@ lunch.addEventListener("click", () => {
         return mealType;
     })
     createRecipies(lunchMeal)
+    pageTital.textContent = "Lunchs"
 });
 
 dinner.addEventListener("click", () => {
@@ -210,6 +299,7 @@ dinner.addEventListener("click", () => {
         return mealType;
     })
     createRecipies(dinnerMeal)
+    pageTital.textContent = "Dinners"
 });
 
 dessert.addEventListener("click", () => {
@@ -218,11 +308,13 @@ dessert.addEventListener("click", () => {
         return mealType;
     })
     createRecipies(dessertMeal)
+    pageTital.textContent = "Desserts"
 });
 
 favorites.addEventListener("click", () => {
     const favoriteMeals = recipies.filter(r => r.type.includes("favorite"));
     createRecipies(favoriteMeals)
+    pageTital.textContent = "Favorites"
 });
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
