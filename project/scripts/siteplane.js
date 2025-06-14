@@ -87,7 +87,7 @@ const recipies = [
             "Shape into balls and roll in granulated sugar.", "Bake 350° for 8 - 10 min",
              "Immediately press a chocolate kiss int each."],
         image: "images/peanut-blossoms.webp",
-        type: ""
+        type: "dessert"
     },
     {
         foodName: "",
